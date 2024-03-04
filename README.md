@@ -12,16 +12,11 @@ The repository is structured into a single `main` branch to showcase the plugin 
     - No copyleft licenses are found within the codebase.
 
 Introduction of copyleft components can be tested by adding code to the repository.
-  
-
-## Policies in Detail
-
-- **Copyleft**: This policy scans your code for copyleft licenses. If no copyleft licenses are identified, the check passes. Otherwise, it fails, indicating non-compliance.
 
 
 ## How to Use Sonarqube Integration in Your Project
 
-To use the SCANOSS Sonarqube Example Plugin in your project
+Follow this steps to use the SCANOSS Sonarqube Example Plugin in your project:
 
 ### Pre-requisites:
 
@@ -29,9 +24,16 @@ To use the SCANOSS Sonarqube Example Plugin in your project
 
 - Install SCANOSS Sonarqube Plugin (See [Plugin's repository](https://github.com/scanoss/scanoss-sonar-example-plugin/) for further information)
 
+- Configure project in Sonarqube. Additionally to project creation, you will need:
+  - CI Access Token: Generate a new Token at Project Setup
+  - Quality Gate configured: Create a new Quality Gate or add a condition to an existing one. An example condition is 
+    - Metric: "Copyleft License Count" 
+    - Operator: "is grater than"
+    - Value: 0
+
 ### Project Setup Instructions:
 
-1. Add the required project variables and secrets:
+1. Add the required project variables and secrets to the GitHub repository's settings.
 
 - SONAR HOST URL (Variable): `SONAR_HOST_URL` pointing to your sonar instance. Example: https://sonar.yourcompany.com
 - SONAR TOKEN (Secret): `SONAR_TOKEN` secret corresponding to your Sonar's project Analysis Method (Other CI).

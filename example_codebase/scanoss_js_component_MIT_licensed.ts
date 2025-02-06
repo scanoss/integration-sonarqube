@@ -5,6 +5,7 @@ scan.addHelpText("after", "Example:\n$ scanoss-js scan -o scan-output.json <sour
 
 
 
+
 scan.addOption(new Option("-w, --wfp", "Scan a .wfp file instead of a folder"));
 scan.addOption(new Option("-H, --hpsm", "Scan using winnowing high precision matching"));
 scan.addOption(new Option("-x, --extract", "Extract compressed files before launch scan in folder <<zip_name>>-unzipped"));

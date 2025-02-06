@@ -3,6 +3,7 @@ scan.addArgument(new Argument("<source>"));
 scan.description("Scan a folder/file");
 scan.addHelpText("after", "Example:\n$ scanoss-js scan -o scan-output.json <source-folder>");
 
+
 scan.addOption(new Option("-w, --wfp", "Scan a .wfp file instead of a folder"));
 scan.addOption(new Option("-H, --hpsm", "Scan using winnowing high precision matching"));
 scan.addOption(new Option("-x, --extract", "Extract compressed files before launch scan in folder <<zip_name>>-unzipped"));

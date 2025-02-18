@@ -1,0 +1,16 @@
+{
+  "bom": {
+    "include": [],
+    "remove": [],
+    "replace": []
+  },
+  "settings": {
+    "skip": {
+      "patterns": {
+        "scanning": [
+          "example_codebase/"
+        ]
+      }
+    }
+  }
+}

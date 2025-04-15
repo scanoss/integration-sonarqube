@@ -1,4 +1,4 @@
-# SCANOSS Sonarqube Integration Example
+# SCANOSS Sonarqube Integration Example 
 
 This repository serves as an example to demonstrate how to use the [SCANOSS Sonarqube Example Plugin](https://github.com/scanoss/scanoss-sonar-example-plugin/) for license compliance in your projects. 
 
